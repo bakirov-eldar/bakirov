@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html dir="ltr" lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>BakirovLab. Сайт Эльдара Бакирова</title>
@@ -8,8 +8,8 @@
     <link rel="icon" href="image/x-icon.ico" type="image/x-icon">
 </head>
 
-  <body>
-      <div class="wrapper">
+<body>
+    <div class="wrapper">
         <header class="header">
             <p style="position: absolute;
             width: 190px;
@@ -81,7 +81,7 @@
                 <div>
                     <p class="p-l">
                         <style>
-                            .p-l{
+                            .p-l {
                                 position: absolute;
                                 text-align: left;
                                 left: 120px;
@@ -102,11 +102,12 @@
                                 color: #FFFFFF;
                             }
                         </style>
-                        <span style="-moz-user-select: -moz-none; -o-user-select: none; -khtml-user-select: none; -webkit-user-select: none; user-select: none;">✉</span>e.bakirov@bakirovlab.ru
+                        <span
+                            style="-moz-user-select: -moz-none; -o-user-select: none; -khtml-user-select: none; -webkit-user-select: none; user-select: none;">✉</span>e.bakirov@bakirovlab.ru
                     </p>
                     <p class="p-r">
                         <style>
-                            .p-r{
+                            .p-r {
                                 position: absolute;
                                 width: auto;
                                 height: 17px;
@@ -127,13 +128,17 @@
                                 right: 120px;
                             }
                         </style>
-                        © Copyright 2022, Bakirov E. T.
+                        © Copyright 2022-<span id="current_year"></ы>, Bakirov E. T.
                     </p>
                 </div>
             </div>
         </footer>
-      </div>
-
-  </body>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $('#current_year').text(new Date().getFullYear());
+    </script>
+</body>
 
 </html>
